@@ -28,6 +28,15 @@ project.lock.json
 project.fragment.lock.json
 artifacts/
 
+# IDE files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
@@ -38,10 +47,49 @@ ScaffoldingReadMe.txt
 
 # dotenv environment variables file
 .env
+.env.*
+!.env.example
+!.env.template
+
+# Secrets and local configuration
+secrets.json
+secrets.*.json
+appsettings.*.local.json
+**/secrets/
+**/*.credentials
+**/*.credential
+**/*.token
+**/application_default_credentials.json
+*.pfx
+*.p12
+*.key
+*.pem
+*.snk
+*.jks
+*.keystore
+*.mobileprovision
+*.provisionprofile
+**/id_rsa
+**/id_ed25519
+**/id_ecdsa
+**/id_dsa
+
+# Cloud provider credentials
+.aws/
+.azure/
+.gcloud/
 
 # Others
 ~$*
 *~
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+.DS_Store
+Thumbs.db
+Desktop.ini
 CodeCoverage/
 
 # MSBuild Binary and Structured Log
